@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 32px;
     box-sizing: border-box;
+    overflow: hidden;
     &-content {
         max-width: 1110px;
         width: 100%;
@@ -58,6 +59,8 @@
         }
     }
     @media (max-width: 740px) {
+        overflow-y: auto;
+        display: block;
         &-content {
             .header {
                 .title {
@@ -68,7 +71,7 @@
         .cards-container {
             width: 100%;
             max-width: 350px;
-            height: 530px;
+            height: auto;
             display: flex;
             flex-direction: column;
             gap: 25px;
